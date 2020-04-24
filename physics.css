@@ -1,0 +1,238 @@
+.square-1 {
+    height: 100px;
+    width: 100px;
+}
+
+.object {
+    border: 1px solid #000000;
+    background-color: #009999;
+    position: absolute;
+    z-index: 50;
+}
+
+.human {
+    height: 200px;
+    z-index: 0;
+}
+
+#human-1 {
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 100;
+    transform-origin: center left;
+    overflow: visible;
+    pointer-events: none;
+}
+
+/*#arrow1 {
+    transform: rotate(-0.89rad) scale(0.64);
+    left: 81px;
+    top: 226px;
+}
+
+#arrow2 {
+    transform: rotate(-0.58rad) scale(0.17);
+    left: 554px;
+    top: 124px;
+}
+
+#arrow3 {
+    transform: rotate(2.30rad) scale(0.07);
+    left: 1050px;
+    top: 327px;
+}*/
+
+.movePosition {
+    height: 40%;
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 300;
+    cursor: pointer;
+    
+}
+
+.movePositionDot {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background-color: #000000;
+    border-radius: 50%;
+    z-index: 200;
+}
+
+.lock {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 15%;
+    opacity: 0;
+}
+
+#menu-bar {
+    top: 0;
+    background-color: #e0e0e0;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    z-index: 500;
+}
+
+#play-pause {
+    height: 40px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#refresh {
+    height: 30px;
+    padding-right: 20px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+#menu-buttons td {
+    padding: 0px;
+    padding-top: 3px;
+}
+
+#menu-buttons {
+    margin: 0px auto;
+    height: 50px;
+}
+
+#context-menu {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: auto;
+    width: auto;
+    min-width: 100px;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    padding: 2px 0px;
+    background-color: #f0f0f0;
+    transition: 0.1s opacity;
+    box-shadow: 2px 2px 3px rgba(000,000,000,0.3);
+}
+
+#context-menu p {
+    margin: 0px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
+#context-menu p:hover {
+    background-color: #b0b0b0;
+}
+
+#physics-field {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#popup {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 61px;
+    left: 10px;
+    opacity: 0;
+    border: 1px solid #0078d7;
+    z-index: -1;
+    background-color: #e0e0e0;
+    transition: 0.25s opacity;
+    box-shadow: 1px 1px 10px rgba(000,000,000,0.3);
+}
+
+#popupheader {
+    width: 100%;
+    height: 30px;
+    background: #0078d7;
+}
+
+#popuptitle {
+    margin: 0px;
+    padding: 5px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
+#popupx {
+    position: absolute;
+    height: 31px;
+    width: 41px;
+    background-color: transparent;
+    top: -1px;
+    right: -1px;
+    transition: 0.25s background-color;
+}
+
+#popupx:hover {
+    background-color: #ff0000;
+}
+
+#popupx img {
+    height: 12px;
+    width: 12px;
+    padding-top: 8.5px;
+    padding-left: 14px;
+}
+
+#matrixtable {
+    display: block;
+    margin: 0px 10px 0px;
+    width: 100%;
+    
+}
+
+#matrixhead {
+    
+}
+
+#matrixtable td {
+    padding-top: 10px;
+}
+
+#matrixtable input {
+    width: 50px;
+    margin: 0px auto;
+    display: block;
+    text-align: right;
+}
+
+#matrixheadspace {
+    width: 100px;
+}
+
+#matrixheadx {
+    padding: 10px 44px 0px;
+}
+
+#matrixheady {
+    padding: 10px 44px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
